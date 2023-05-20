@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\bin\Win64_Shipping_Server\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -25,7 +25,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\bin\Win64_Shipping_Server\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -36,6 +36,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,12 +46,28 @@
     <Reference Include="TaleWorlds.Core">
       <HintPath>D:\SteamLibrary\steamapps\common\Mount &amp; Blade II Dedicated Server\bin\Win64_Shipping_Server\TaleWorlds.Core.dll</HintPath>
     </Reference>
+    <Reference Include="TaleWorlds.DotNet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="TaleWorlds.Library">
+      <HintPath>D:\SteamLibrary\steamapps\common\Mount &amp; Blade II Dedicated Server\bin\Win64_Shipping_Server\TaleWorlds.Library.dll</HintPath>
+    </Reference>
     <Reference Include="TaleWorlds.MountAndBlade">
       <HintPath>D:\SteamLibrary\steamapps\common\Mount &amp; Blade II Dedicated Server\bin\Win64_Shipping_Server\TaleWorlds.MountAndBlade.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.MountAndBlade.DedicatedCustomServer">
+      <HintPath>D:\SteamLibrary\steamapps\common\Mount &amp; Blade II Dedicated Server\bin\Win64_Shipping_Server\TaleWorlds.MountAndBlade.DedicatedCustomServer.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.MountAndBlade.Diamond">
+      <HintPath>D:\SteamLibrary\steamapps\common\Mount &amp; Blade II Dedicated Server\bin\Win64_Shipping_Server\TaleWorlds.MountAndBlade.Diamond.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.PlayerServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="WindowsFirewallHelper, Version=2.2.0.85, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsFirewallHelper.2.2.0.86\lib\net40\WindowsFirewallHelper.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BannerlordFirewall.cs" />
+    <Compile Include="MissionBehaviors\RemoveIpBehavior.cs" />
+    <Compile Include="PatchedCode\PatchCustomBattleServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

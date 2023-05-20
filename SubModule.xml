@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+    <Name value="Bannerlord Firewall By Mentalrob" />
+    <Id value="BannerlordFirewall" />
+    <Version value="v1.1.4" />
+    <DefaultModule value="true" />
+    <ModuleCategory value="Multiplayer" />
+    <ModuleType value="Official" />
+    <DependedModules>
+        <DependedModule Id="Native" DependentVersion="v1.1.4" Optional="false" />
+    </DependedModules>
+    <SubModules>
+        <SubModule>
+            <Name value="BannerlordFirewall" />
+            <DLLName value="BannerlordFirewall.dll" />
+            <SubModuleClassType
+                value="BannerlordFirewall.BannerlordFirewall" />
+            <Tags>
+                <Tag key="DedicatedServerType" value="custom" />
+            </Tags>
+        </SubModule>
+    </SubModules>
+</Module>
