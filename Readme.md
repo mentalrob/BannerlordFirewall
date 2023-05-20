@@ -24,6 +24,8 @@ start DedicatedCustomServer.Starter.exe /dedicatedcustomserverconfigfile ds_conf
 
 After that locate DedicatedCustomServer.Starter.exe in your `bin/Win64_Shipping_Server` folder and then check "Run this program as an administrator" ( Right click -> Properties -> Compatability )
 
+! You need to put 0Harmony.dll file inside of the zip/bin/Win64_Shipping_Server to your root bin/Win64_Shipping_Server folder also
+
 ### Some Notes
 
 This worked for Persistent Empires quite good. **But it might not be the case for you since this mitigates application layer attacks**
