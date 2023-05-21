@@ -29,3 +29,7 @@ After that locate DedicatedCustomServer.Starter.exe in your `bin/Win64_Shipping_
 ### Some Notes
 
 This worked for Persistent Empires quite good. **But it might not be the case for you since this mitigates application layer attacks**
+
+### Donation
+
+If you find this mod useful you can donate some $$$ using https://www.patreon.com/avrasiacommunity
